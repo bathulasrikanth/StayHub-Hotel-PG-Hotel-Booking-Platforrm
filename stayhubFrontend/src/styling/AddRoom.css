@@ -1,0 +1,107 @@
+/* FULL PAGE */
+.add-room-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #5f7cff, #6fa4ff);
+  padding: 20px;
+}
+
+/* CARD */
+.add-room-card {
+  width: 100%;
+  max-width: 400px;
+
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* TITLE */
+.add-room-card h2 {
+  margin-bottom: 10px;
+}
+
+/* PROPERTY ID */
+.property-id {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+/* FORM */
+.add-room-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUT */
+.add-room-card input,
+.add-room-card select {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+/* BUTTON */
+.add-room-card button {
+  padding: 12px;
+  background: #28a745;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-room-card button:hover {
+  background: #1e7e34;
+}
+
+.vendor-info {
+  background: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #25D366;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .add-room-card {
+    padding: 20px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .add-room-card {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,65 @@
+/* WRAPPER */
+.register-wrapper {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+/* CARD */
+.register-card {
+  width: 380px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* TITLE */
+.register-card h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.register-card input,
+.register-card select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* BUTTON */
+.register-card button {
+  width: 100%;
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.register-card button:hover {
+  background: darkgreen;
+}
+
+/* ERROR */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* LINK */
+.login-link {
+  margin-top: 15px;
+}
+
+.login-link span {
+  color: blue;
+  cursor: pointer;
+}

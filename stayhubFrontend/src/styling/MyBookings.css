@@ -1,0 +1,72 @@
+
+.mb-container {
+  padding: 30px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.mb-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.mb-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.mb-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* STATUS */
+.mb-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+.mb-status.confirmed {
+  background: green;
+}
+
+.mb-status.cancelled {
+  background: red;
+}
+
+.mb-status.completed {
+  background: blue;
+}
+
+/* BUTTON */
+.mb-cancel-btn {
+  margin-top: 10px;
+  padding: 8px;
+  background: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .mb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .mb-grid {
+    grid-template-columns: 1fr;
+  }
+}

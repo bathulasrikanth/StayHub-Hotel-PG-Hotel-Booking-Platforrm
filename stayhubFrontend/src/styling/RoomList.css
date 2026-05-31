@@ -1,0 +1,193 @@
+/* 🔥 BOOKING MODAL */
+.booking-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: fadeIn 0.3s ease-in-out; /* ✅ overlay fade */
+}
+
+.booking-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+
+  animation: popUp 0.3s ease-in-out; /* ✅ modal pop effect */
+}
+
+.booking-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.booking-modal input {
+  padding: 10px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.confirm-btn {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.cancel-btn {
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/* PAGE */
+.room-page-wrapper {
+  padding: 30px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.room-page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* GRID */
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 3 per row */
+  gap: 25px;
+}
+
+/* CARD */
+.room-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.room-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.room-no-image {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+}
+
+/* CONTENT */
+.room-card-content {
+  padding: 15px;
+}
+
+.room-price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.room-units {
+  font-size: 14px;
+  color: gray;
+}
+
+/* STATUS */
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.not-available {
+  color: red;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.room-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.room-btn:hover {
+  background: #1e7e34;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .room-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .room-grid {
+    grid-template-columns: 1fr; /* ✅ single column */
+  }
+
+  .room-page-title {
+    font-size: 22px; /* smaller title */
+  }
+
+  .room-card {
+    border-radius: 8px;
+  }
+
+  .room-card-image,
+  .room-no-image {
+    height: 150px; /* reduce image height */
+  }
+
+  .booking-modal {
+    width: 90%; /* modal fits smaller screens */
+    padding: 20px;
+  }
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popUp {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

@@ -1,0 +1,91 @@
+/* FULL PAGE CENTER */
+.add-property-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background: linear-gradient(135deg, #5f7cff, #6fa4ff); */
+  padding: 20px;
+}
+
+/* CARD */
+.add-property-card {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.add-property-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.add-property-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS */
+.add-property-card input,
+.add-property-card textarea,
+.add-property-card select {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+/* TEXTAREA */
+.add-property-card textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* BUTTON */
+.add-property-card button {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.add-property-card button:hover {
+  background: #0056b3;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  .add-property-card {
+    padding: 20px;
+  }
+
+  .add-property-card h2 {
+    font-size: 20px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+  .add-property-card {
+    max-width: 90%;
+  }
+}

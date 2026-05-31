@@ -1,0 +1,18 @@
+.vendor-wrapper {
+  padding: 90px 20px;
+}
+
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
